@@ -1,0 +1,104 @@
+<!-- 
+  Created by Ahzam Hamza Karat
+  Cognifyz Internship - Level 1 Task 1
+  A basic HTML/CSS webpage with navigation, image, and a form.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahzam's Internship Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #5a00d1; /* Slightly different purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2f008f;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .form-area {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #5a00d1;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e009d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Internship Page</h1>
+        <p>This is my submission for Level 1 - Task 1 at Cognifyz.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main">
+        <img src="Picture of level1 - task1.png" alt="Task 1 Screenshot">
+
+        <div class="form-area">
+            <h2>Subscribe for Updates</h2>
+            <form action="#">
+                <input type="text" placeholder="Your email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
