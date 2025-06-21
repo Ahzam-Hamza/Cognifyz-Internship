@@ -1,0 +1,97 @@
+<!-- 
+  Level 2 Task 1 - Web Dev Internship (Cognifyz)
+  Trying out Bulma + Bootstrap for responsive layout :)
+  Created by Ahzam Hamza Karat
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Layout | Task 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bulma (for card) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Bootstrap (for grid) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      padding: 25px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 35px;
+    }
+
+    .custom-heading {
+      margin: 40px 0 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #5a00d1;
+    }
+
+    .card {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .text-box {
+      font-size: 0.95rem;
+    }
+
+    /* just testing styles */
+    .unused-style {
+      border: 1px dashed red;
+    }
+
+    .container .row > div {
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Internship Task 1 - Responsive Components</h1>
+
+  <!-- Bulma Card -->
+  <div class="custom-heading">Bulma Card Example</div>
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="Responsive card image(level2 of task1).png" alt="Card Preview">
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="text-box">
+        <strong>Responsive Card Component</strong><br>
+        Created with Bulma CSS – useful for quick layout blocks!
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Grid -->
+  <div class="custom-heading">Bootstrap Grid Example</div>
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-3 bg-primary text-white text-center">HTML + CSS</div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-3 bg-success text-white text-center">Bootstrap Grid</div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="p-3 bg-warning text-dark text-center">Responsive Blocks</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
