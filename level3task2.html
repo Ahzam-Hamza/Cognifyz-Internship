@@ -1,0 +1,140 @@
+<!-- 
+  Author: Ahzam Hamza Karat
+  Cognifyz Internship - Level 3 Task 2
+  Personalized internship landing page (HTML + CSS only)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahzam | Web Internship Info Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #5a00d1;
+      color: white;
+      padding: 42px 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.95em;
+    }
+
+    .page-body {
+      max-width: 1000px;
+      margin: 38px auto;
+      padding: 0 22px;
+    }
+
+    .info-block {
+      margin-bottom: 36px;
+    }
+
+    .info-block h2 {
+      color: #5a00d1;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .action-box {
+      text-align: center;
+      margin: 35px 0;
+    }
+
+    .action-box button {
+      background-color: #5a00d1;
+      color: white;
+      border: none;
+      padding: 11px 24px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .action-box button:hover {
+      background-color: #3c0099;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.4em;
+      }
+
+      .action-box button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ahzam’s Internship Page – Level 3 Task 2</h1>
+  </header>
+
+  <div class="page-body">
+
+    <div class="info-block">
+      <h2>About the Internship</h2>
+      <p>This internship by Cognifyz Technologies helps aspiring web developers get practical exposure through remote, hands-on projects. Duration: 4 weeks. Mode: Online.</p>
+    </div>
+
+    <div class="info-block">
+      <h2>What You’ll Gain</h2>
+      <ul>
+        <li>Real project experience</li>
+        <li>Certificate after successful completion</li>
+        <li>Flexible remote working culture</li>
+        <li>Guidance from working professionals</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h2>Who Can Apply?</h2>
+      <ul>
+        <li>Basic understanding of HTML, CSS & JS</li>
+        <li>Self-motivated learners</li>
+        <li>People with a problem-solving mindset</li>
+      </ul>
+    </div>
+
+    <div class="action-box">
+      <!-- Could link to real form here -->
+      <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform'">Apply Now</button>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Contact: info@cognifyztech.com &nbsp; | &nbsp; © 2025 Cognifyz Technologies</p>
+  </footer>
+
+</body>
+</html>
