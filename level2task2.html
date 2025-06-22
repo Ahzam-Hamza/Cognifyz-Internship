@@ -1,0 +1,118 @@
+<!-- 
+  Author: Ahzam Hamza Karat
+  Cognifyz Internship - Level 2 Task 2
+  Responsive nav menu with media queries - handcrafted!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahzam's Responsive Design | L2 Task 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    .navbar {
+      background: #5a00d1;
+      color: white;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .toggle-icon {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    .main {
+      padding: 32px;
+      text-align: center;
+    }
+
+    .main h1 {
+      color: #333;
+    }
+
+    /* Responsive Behavior */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #3e009d;
+        width: 200px;
+        padding: 12px;
+        border-radius: 0 0 6px 6px;
+      }
+
+      .navbar ul.show {
+        display: flex;
+      }
+
+      .toggle-icon {
+        display: block;
+      }
+    }
+
+    /* Future-proofing */
+    /* @media (max-width: 1024px) { } */
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Ahzam.Dev</div>
+    <div class="toggle-icon" onclick="toggleNav()">☰</div>
+    <ul id="menu-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="main">
+    <h1>Responsive Nav using Media Queries</h1>
+    <p>This is a sample responsive layout for Cognifyz Internship (L2 Task 2).</p>
+    <p>Try resizing your browser or opening on mobile to see the effect.</p>
+  </section>
+
+  <script>
+    // Handles toggle of mobile menu
+    function toggleNav() {
+      const navLinks = document.getElementById('menu-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
